@@ -1,0 +1,116 @@
+{
+  "unused": {
+    "variables": [],
+    "functions": [
+      "add",
+      "factorial",
+      "isPrime",
+      "fibonacci",
+      "gcd",
+      "circleArea"
+    ],
+    "classes": []
+  },
+  "notAffectingReturn": {
+    "variables": [],
+    "functions": [],
+    "classes": []
+  },
+  "variableScope": {
+    "globalVariables": [
+      "a",
+      "b",
+      "n",
+      "i"
+    ],
+    "localVariables": [
+      "result",
+      "prev",
+      "current",
+      "next",
+      "temp",
+      "radius"
+    ],
+    "otherVariables": []
+  },
+  "contexts": {
+    "a": {
+      "scope": "gcd",
+      "line": 107
+    },
+    "b": {
+      "scope": "gcd",
+      "line": 107
+    },
+    "n": {
+      "scope": "fibonacci",
+      "line": 78
+    },
+    "result": {
+      "scope": "function:factorial",
+      "line": 36
+    },
+    "i": {
+      "scope": "function:fibonacci",
+      "line": 86
+    },
+    "prev": {
+      "scope": "function:fibonacci",
+      "line": 83
+    },
+    "current": {
+      "scope": "function:fibonacci",
+      "line": 84
+    },
+    "next": {
+      "scope": "function:fibonacci",
+      "line": 87
+    },
+    "temp": {
+      "scope": "function:gcd",
+      "line": 112
+    },
+    "radius": {
+      "scope": "circleArea",
+      "line": 130
+    }
+  },
+  "variableUsages": {
+    "a": [
+      "add",
+      "gcd"
+    ],
+    "b": [
+      "add",
+      "gcd"
+    ],
+    "n": [
+      "factorial",
+      "isPrime",
+      "fibonacci"
+    ],
+    "result": [
+      "factorial"
+    ],
+    "i": [
+      "factorial",
+      "isPrime",
+      "fibonacci"
+    ],
+    "prev": [
+      "fibonacci"
+    ],
+    "current": [
+      "fibonacci"
+    ],
+    "next": [
+      "fibonacci"
+    ],
+    "temp": [
+      "gcd"
+    ],
+    "radius": [
+      "circleArea"
+    ]
+  }
+}
