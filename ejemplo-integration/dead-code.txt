@@ -1,0 +1,57 @@
+=== DEAD CODE ANALYSIS ===
+
+VARIABLE CLASSIFICATION:
+----------------------------------------
+Global Variables (used in multiple functions):
+  - a (scope: gcd, line: 107, functions: add, gcd)
+  - b (scope: gcd, line: 107, functions: add, gcd)
+  - n (scope: fibonacci, line: 78, functions: factorial, isPrime, fibonacci)
+  - i (scope: function:fibonacci, line: 86, functions: factorial, isPrime, fibonacci)
+
+Local Variables (used in a single function):
+  - result (scope: function:factorial, line: 36, function: factorial)
+  - prev (scope: function:fibonacci, line: 83, function: fibonacci)
+  - current (scope: function:fibonacci, line: 84, function: fibonacci)
+  - next (scope: function:fibonacci, line: 87, function: fibonacci)
+  - temp (scope: function:gcd, line: 112, function: gcd)
+  - radius (scope: circleArea, line: 130, function: circleArea)
+
+Other Variables (not classified as global or local):
+
+
+DEFINED BUT UNUSED ELEMENTS:
+----------------------------------------
+Variables:
+
+Functions:
+  - add
+  - factorial
+  - isPrime
+  - fibonacci
+  - gcd
+  - circleArea
+
+Classes:
+
+
+ELEMENTS NOT AFFECTING FINAL RETURN:
+----------------------------------------
+Variables:
+
+Functions:
+
+Classes:
+
+
+VARIABLE USAGE SUMMARY:
+----------------------------------------
+a: used in 2 function(s): add, gcd
+b: used in 2 function(s): add, gcd
+n: used in 3 function(s): factorial, isPrime, fibonacci
+result: used in 1 function(s): factorial
+i: used in 3 function(s): factorial, isPrime, fibonacci
+prev: used in 1 function(s): fibonacci
+current: used in 1 function(s): fibonacci
+next: used in 1 function(s): fibonacci
+temp: used in 1 function(s): gcd
+radius: used in 1 function(s): circleArea
