@@ -1,0 +1,28 @@
+{
+  "summary": {
+    "filename": "unity.ts",
+    "timestamp": "2025-04-14T11:09:04.410Z",
+    "execution_time": 794.6836000000001,
+    "passed_tests": 0,
+    "failed_tests": 0,
+    "skipped_tests": 0,
+    "total_tests": 0,
+    "passing_percentage": 0
+  },
+  "tests": {},
+  "parameter_validations": {},
+  "performance": {
+    "execution_time": 0.0004,
+    "cpu_usage": 0,
+    "ram_usage_mb": 0,
+    "memory_storage_bytes": 1992,
+    "execution_speed_lines_per_second": 0,
+    "cpu_info": {
+      "model": "Intel(R) Celeron(R) N5105 @ 2.00GHz",
+      "cores": 4,
+      "speed": 1997
+    },
+    "memory_total_mb": 16125.34,
+    "test_environment": "Windows_NT 10.0.26100 (win32, x64)"
+  }
+}
