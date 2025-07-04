@@ -1,0 +1,58 @@
+{
+  "functionDefinitions": {
+    "add": {
+      "argumentTypes": {
+        "a": "number",
+        "b": "number"
+      },
+      "returns": [],
+      "returnType": "150"
+    },
+    "factorial": {
+      "argumentTypes": {
+        "n": "number"
+      },
+      "returns": [
+        "1",
+        "result"
+      ],
+      "returnType": "150"
+    },
+    "isPrime": {
+      "argumentTypes": {
+        "n": "number"
+      },
+      "returns": [],
+      "returnType": "136"
+    },
+    "fibonacci": {
+      "argumentTypes": {
+        "n": "number"
+      },
+      "returns": [
+        "0",
+        "1",
+        "current"
+      ],
+      "returnType": "150"
+    },
+    "gcd": {
+      "argumentTypes": {
+        "a": "number",
+        "b": "number"
+      },
+      "returns": [
+        "a"
+      ],
+      "returnType": "150"
+    },
+    "circleArea": {
+      "argumentTypes": {
+        "radius": "number"
+      },
+      "returns": [],
+      "returnType": "150"
+    }
+  },
+  "interactionPaths": []
+}
