@@ -1,0 +1,112 @@
+{
+  "compilerOptions": {
+    /** Especifica la versión de ECMAScript que el compilador utilizará para emitir el código JavaScript. 
+     * Opciones comunes son: 
+     * "ES3", "ES5", "ES6" (ES2015), "ES2016", etc.
+     */
+    "target": "es6",
+
+    /** Especifica el módulo de salida que generará el compilador. 
+     * Algunas opciones son: "commonjs", "es6", "amd", "system", "umd", etc.
+     */
+    "module": "commonjs",
+
+    /** Permite la interoperabilidad entre importaciones y exportaciones de módulos de ES6 y CommonJS.
+     * Si usas `import x from 'y'`, se asegurará de que TypeScript lo traduzca correctamente.
+     */
+    "esModuleInterop": true,
+
+    /** Define el comportamiento de los módulos de importación y exportación en el proyecto. 
+     * "none" significa que no se generará ningún código de módulos, "commonjs" usa Node.js, "umd" es compatible con AMD y CommonJS, etc.
+     */
+    "moduleResolution": "node",
+
+    /** Si se establece en true, TypeScript buscará automáticamente el archivo de tipo 'index.d.ts' 
+     * en los directorios de los módulos, lo cual facilita las importaciones.
+     */
+    "resolveJsonModule": true,
+
+    /** Permite la importación de archivos `.json` como módulos, lo cual es útil si necesitas leer archivos JSON como objetos en TypeScript. */
+    "allowJs": true,
+
+    /** Permite usar archivos `.js` junto con archivos `.ts` en el proyecto, útil cuando migras de JavaScript a TypeScript. */
+    "checkJs": false,
+
+    /** Especifica la codificación que utilizará el compilador para leer y escribir los archivos. */
+    "charset": "utf-8",
+
+    /** Permite la inclusión de los archivos en el directorio actual y subdirectorios a través de las configuraciones de "include" y "exclude". */
+    "skipLibCheck": true,
+
+    /** Habilita el chequeo estricto para las opciones de tipos y errores comunes. */
+    "strict": true,
+
+    /** Permite habilitar o deshabilitar varias comprobaciones de tipo estrictas. */
+    "noImplicitAny": true,
+
+    /** Desactiva las comprobaciones de tipo estrictas para los miembros no definidos de los objetos. */
+    "noImplicitThis": true,
+
+    /** Hace que la función `this` en funciones y métodos sea estricta y cause un error si no está bien definida. */
+    "alwaysStrict": true,
+
+    /** Activa la comprobación de tipos en las definiciones de los módulos del proyecto. */
+    "noUnusedLocals": true,
+
+    /** Activa la comprobación de tipos para las variables no utilizadas. */
+    "noUnusedParameters": true,
+
+    /** Especifica el tipo de salida de los archivos generados por TypeScript (por ejemplo, .js). */
+    "outDir": "./dist",
+
+    /** Si se habilita, TypeScript no generará archivos de salida para archivos que no se han modificado. */
+    "incremental": true,
+
+    /** Para generar un archivo `tsconfig.tsbuildinfo` que guarda información de la compilación incremental. */
+    "tsBuildInfoFile": "./dist/tsconfig.tsbuildinfo",
+
+    /** Permite la reemisión de tipos de archivo para aquellos módulos importados que no tengan tipos disponibles. */
+    "declaration": true,
+
+    /** Si está habilitado, también generará archivos `.d.ts` con la información de los tipos. */
+    "declarationMap": true,
+
+    /** Permite que los archivos de tipo y declaración se generen al lado de los archivos JavaScript de salida. */
+    "sourceMap": true,
+
+    /** Controla el comportamiento de las rutas relativas y absolutas del código fuente. */
+    "baseUrl": "./src",
+
+    /** Configura las rutas para importar módulos, a menudo usado en proyectos grandes con estructuras de carpetas complejas. */
+    "paths": {
+      "*": ["node_modules/*", "src/*"]
+    },
+
+    /** Especifica el directorio donde se encuentra el archivo de salida generado. */
+    "outFile": "./dist/bundle.js",
+
+    /** Si está habilitado, el compilador realizará un chequeo de los errores de tipo mientras se ejecuta el código. */
+    "noEmit": false,
+
+    /** Permite que los módulos se generen incluso si no están directamente referenciados en el código. */
+    "isolatedModules": true,
+
+    /** Si se establece en true, los archivos serán generados para cada archivo de entrada. */
+    "lib": ["es6", "dom", "esnext"],
+
+    /** Especifica si los archivos de tipo global (como `node_modules/@types/xyz`) deben ser incluidos. */
+    "typeRoots": ["node_modules/@types"],
+
+    /** Habilita la función para chequear tipos dentro de los archivos de declaración `.d.ts`. */
+    "allowSyntheticDefaultImports": true,
+
+    /** Establece la manera en que TypeScript maneja el caso de exportación de un módulo CommonJS cuando usas importación por defecto. */
+    "forceConsistentCasingInFileNames": true
+  },
+
+  /** Para especificar qué archivos deben ser incluidos y excluidos en la compilación. 
+   * "include" define los archivos que se incluirán, "exclude" especifica los archivos que se deben excluir.
+   */
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
+}
